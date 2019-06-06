@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.6.3/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>cdn/animate/3.5.2/animate.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>cdn/iconfont/1.0.0/index.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>cdn/avue/index.css" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>亿仟通用管理后台</title>
+    <style>
+      html,
+      body,
+      #app {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .avue-home {
+        background-color: #303133;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .avue-home__main {
+        user-select: none;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      .avue-home__footer {
+        width: 100%;
+        flex-grow: 0;
+        text-align: center;
+        padding: 1em 0;
+      }
+    
+      .avue-home__footer>a {
+        font-size: 12px;
+        color: #ABABAB;
+        text-decoration: none;
+      }
+    
+      .avue-home__loading {
+        height: 32px;
+        width: 32px;
+        margin-bottom: 20px;
+      }
+    
+      .avue-home__title {
+        color: #FFF;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    
+      .avue-home__sub-title {
+        color: #ABABAB;
+        font-size: 12px;
+      }
+
+      .avue-icon-select__list .iconfont{
+          padding: 20px;
+          font-size: 24px;
+      }
+      .aavue-icon-select__list .iconfont:hover{
+        transform: scale(1.4);
+        webkit-transform: scale(1.4);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        很抱歉，如果没有 JavaScript 支持，Avue-cli 将不能正常工作。请启用浏览器的 JavaScript 然后继续。
+      </strong>
+    </noscript>
+    <div id="app">
+      <div class="avue-home">
+        <div class="avue-home__main">
+          <img class="avue-home__loading" src="./cdn/svg/loading-spin.svg" alt="loading">
+          <div class="avue-home__title">
+            正在加载资源
+          </div>
+          <div class="avue-home__sub-title">
+            初次加载资源可能需要较多时间 请耐心等待
+          </div>
+        </div>
+        <div class="avue-home__footer">
+          <a href="http://www.xinchidao.com" target="_blank">
+            http://www.xinchidao.com </a>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script src="<%= BASE_URL %>cdn/vue/2.5.2/vue.min.js" charset="utf-8"></script>
+    <script src="<%= BASE_URL %>cdn/vuex/2.4.1/vuex.min.js" charset="utf-8"></script>
+    <script src="<%= BASE_URL %>cdn/vue-router/3.0.1/vue-router.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/axios@0.18.0/dist/axios.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/element-ui@2.6.3/lib/index.js"></script>
+    <script src="<%= BASE_URL %>cdn/tinymce/tinymce.min.js" charset="utf-8"></script>
+    <script src="<%= BASE_URL %>cdn/avue/avue.min.js"></script>
+  </body>
+</html>
