@@ -133,6 +133,13 @@ export default class SilasUpload extends Mixins(SilasCompoents, BaseMixin) {
     return this.$confirm(`确定移除 ${file.name}？`)
   }
 
+  @Watch('value')
+  private onWatchValue() {
+    if (!this.status && this.$util.getObjType(this.value) === 'array') {
+      this.text = this.value
+    }
+  }
+
   private handleClick() {
     if (typeof this.click === 'function') {
       this.click({ value: this.text, column: this.column })
