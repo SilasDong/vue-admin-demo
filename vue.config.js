@@ -19,9 +19,9 @@ module.exports = {
         entry
             .add('classlist-polyfill')
             .end()
-        entry
-            .add('@/mock')
-            .end()
+        // entry
+        //     .add('@/mock')
+        //     .end()
     },
     // 配置转发代理
     devServer: {
@@ -29,12 +29,12 @@ module.exports = {
         open: true,
         proxy: {
             '/api': {
-                target: 'https://demo.xxx.com',
+                target: 'https://demo.xmmxgg.com',
                 ws: true,
                 changeOrigin: true
             },
             '/uploadfiles': {
-                target: 'https://demo.xxx.com',
+                target: 'https://demo.xmmxgg.com',
                 ws: true,
                 changeOrigin: true
             }
