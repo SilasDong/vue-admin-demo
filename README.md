@@ -1,4 +1,4 @@
-# 亿仟通用管理后台
+# 通用管理后台
 > 使用[avue-cli修改的]('https://gitee.com/smallweigit/avue-cli')
 
 ## 介绍
